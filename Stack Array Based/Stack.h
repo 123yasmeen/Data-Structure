@@ -3,11 +3,11 @@
 #define MAXSTACK 100
 #define StackEntry int
 typedef struct stack {
-	int top;
-	StackEntry entry[MAXSTACK];
+    int top;
+    StackEntry entry[MAXSTACK];
 }Stack;
 void CreateStack(Stack*);
-void Push(StackEntry*, Stack*);
+void Push(StackEntry, Stack*);
 void Pop(StackEntry*, Stack*);
 int StackFull(Stack*);
 int StackEmpty(Stack*);
